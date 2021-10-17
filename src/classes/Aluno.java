@@ -15,6 +15,9 @@ public class Aluno {
    private String serieMatriculaAluno;
    private double nota1;
    private double nota2;
+   private double nota3;
+   private double nota4;
+
 
     public String getEnderecoAluno() {
         return enderecoAluno;
@@ -23,9 +26,6 @@ public class Aluno {
     public void setEnderecoAluno(String enderecoAluno) {
         this.enderecoAluno = enderecoAluno;
     }
-
-    private double nota3;
-   private double nota4;
 
     public double getNota1() {
         return nota1;
