@@ -119,10 +119,13 @@ public class Aluno {
 
     public double getMediaNota(){
 
+        double somaNotas = 0;
+
         for (Disciplina disciplina :
                 disciplinas ) {
+            somaNotas += disciplina.getNotaDisciplina();
         }
-        return 0;
+        return somaNotas / disciplinas.size();
     }
     /*public double mediaNotasAluno(){
 

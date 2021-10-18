@@ -7,20 +7,20 @@ public class Disciplina {
     private Double notaDisciplina;
     private String nomeDisciplina;
 
-    public void setNomeDisciplina(String nomeDisciplina) {
-        this.nomeDisciplina = nomeDisciplina;
-    }
-
-    public String getNomeDisciplina() {
-        return nomeDisciplina;
+    public Double getNotaDisciplina() {
+        return notaDisciplina;
     }
 
     public void setNotaDisciplina(Double notaDisciplina) {
         this.notaDisciplina = notaDisciplina;
     }
 
-    public Double getNotaDisciplina() {
-        return notaDisciplina;
+    public String getNomeDisciplina() {
+        return nomeDisciplina;
+    }
+
+    public void setNomeDisciplina(String nomeDisciplina) {
+        this.nomeDisciplina = nomeDisciplina;
     }
 
     @Override
