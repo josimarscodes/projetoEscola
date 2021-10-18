@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Objects;
+
 public class Aluno {
 
    private Long codAluno;
@@ -172,5 +174,18 @@ public class Aluno {
                 ", nota3=" + nota3 +
                 ", nota4=" + nota4 +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aluno)) return false;
+        Aluno aluno = (Aluno) o;
+        return getNomeAluno().equals(aluno.getNomeAluno()) && getNumeroCpfAluno().equals(aluno.getNumeroCpfAluno());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getNomeAluno(), getNumeroCpfAluno());
     }
 }
