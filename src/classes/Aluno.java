@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Aluno {
@@ -16,6 +18,15 @@ public class Aluno {
    private String dataMatriculaAluno;
    private String serieMatriculaAluno;
 
+   private List<Disciplina> disciplinas = new ArrayList();
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
 
     public String getEnderecoAluno() {
         return enderecoAluno;
@@ -105,6 +116,14 @@ public class Aluno {
         this.serieMatriculaAluno = serieMatriculaAluno;
     }
 
+
+    public double getMediaNota(){
+
+        for (Disciplina disciplina :
+                disciplinas ) {
+
+        }
+    }
     /*public double mediaNotasAluno(){
 
         double calculoMedia = (nota1+nota2+nota3+nota4) / 4;
