@@ -105,7 +105,7 @@ public class Aluno {
         this.serieMatriculaAluno = serieMatriculaAluno;
     }
 
-    public double mediaNotasAluno(){
+    /*public double mediaNotasAluno(){
 
         double calculoMedia = (nota1+nota2+nota3+nota4) / 4;
 
@@ -117,7 +117,7 @@ public class Aluno {
 
         return calculoMedia;
 
-    }
+    }*/
 
 
 }
