@@ -2,6 +2,8 @@ package main;
 
 import classes.Aluno;
 
+import javax.swing.*;
+
 public class main {
 
     public static void main(String[] agrs){
@@ -13,13 +15,18 @@ public class main {
         aluno.setNumeroCpfAluno("23566589455");
         aluno.setIdadeAluno(40);
 
-        aluno.setNota1(60);
-        aluno.setNota2(61);
-        aluno.setNota3(59);
-        aluno.setNota4(60.5);
+        String nota1 = JOptionPane.showInputDialog("Digite a nota 1: ");
+        String nota2 = JOptionPane.showInputDialog("Digite a nota 2: ");
+        String nota3 = JOptionPane.showInputDialog("Digite a nota 3: ");
+        String nota4 = JOptionPane.showInputDialog("Digite a nota 4: ");
 
-        aluno.imprimeDadosAluno();
+        aluno.setNota1(Double.parseDouble(nota1));
+        aluno.setNota2(Double.parseDouble(nota2));
+        aluno.setNota3(Double.parseDouble(nota3));
+        aluno.setNota4(Double.parseDouble(nota4));
 
+        System.out.println(aluno);
+        System.out.println("Media do aluno: " + aluno.mediaNotasAluno());
 
     }
 }

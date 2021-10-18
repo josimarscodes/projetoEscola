@@ -153,15 +153,24 @@ public class Aluno {
 
     }
 
-    public void imprimeDadosAluno(){
-
-        System.out.println("");
-        System.out.println("Nome: " + nomeAluno);
-        System.out.println("Endereco: " + enderecoAluno);
-        System.out.println("cpf: " + numeroCpfAluno);
-        System.out.println("Idade: " + idadeAluno);
-        System.out.println("---------");
-        System.out.println("Media da nota do aluno " + nomeAluno + " = " + mediaNotasAluno());
-
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "codAluno=" + codAluno +
+                ", nomeAluno='" + nomeAluno + '\'' +
+                ", enderecoAluno='" + enderecoAluno + '\'' +
+                ", idadeAluno=" + idadeAluno +
+                ", dataNascimentoAluno='" + dataNascimentoAluno + '\'' +
+                ", numeroCpfAluno='" + numeroCpfAluno + '\'' +
+                ", rgAluno='" + rgAluno + '\'' +
+                ", nomeMaeAluno='" + nomeMaeAluno + '\'' +
+                ", nomePaiAluno='" + nomePaiAluno + '\'' +
+                ", dataMatriculaAluno='" + dataMatriculaAluno + '\'' +
+                ", serieMatriculaAluno='" + serieMatriculaAluno + '\'' +
+                ", nota1=" + nota1 +
+                ", nota2=" + nota2 +
+                ", nota3=" + nota3 +
+                ", nota4=" + nota4 +
+                '}';
     }
 }
