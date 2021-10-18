@@ -121,8 +121,8 @@ public class Aluno {
 
         for (Disciplina disciplina :
                 disciplinas ) {
-
         }
+        return 0;
     }
     /*public double mediaNotasAluno(){
 
