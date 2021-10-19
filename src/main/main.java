@@ -27,12 +27,18 @@ public class main {
 
         Disciplina disciplina1 = new Disciplina();
         disciplina1.setNomeDisciplina(discip1);
+        disciplina1.setNotaDisciplina(Double.parseDouble(nota1));
         Disciplina disciplina2 = new Disciplina();
-        disciplina1.setNomeDisciplina(discip2);
+        disciplina2.setNomeDisciplina(discip2);
+        disciplina2.setNotaDisciplina(Double.parseDouble(nota2));
         Disciplina disciplina3 = new Disciplina();
-        disciplina1.setNomeDisciplina(discip3);
+        disciplina3.setNomeDisciplina(discip3);
+        disciplina3.setNotaDisciplina(Double.parseDouble(nota3));
         Disciplina disciplina4 = new Disciplina();
-        disciplina1.setNomeDisciplina(discip4);
+        disciplina4.setNomeDisciplina(discip4);
+        disciplina4.setNotaDisciplina(Double.parseDouble(nota4));
+
+
 
 
 
