@@ -121,25 +121,17 @@ public class Aluno {
 
         double somaNotas = 0;
 
-        for (Disciplina disciplina :
-                disciplinas ) {
+        for (Disciplina disciplina : disciplinas ) {
             somaNotas += disciplina.getNotaDisciplina();
         }
-        return somaNotas / disciplinas.size();
-    }
-    /*public double mediaNotasAluno(){
 
-        double calculoMedia = (nota1+nota2+nota3+nota4) / 4;
-
-        if (calculoMedia > 60){
+        if (somaNotas > 60){
             System.out.println("Situacao: Aprovado");
         }else{
             System.out.println("Situacao: Reprovado");
         }
 
-        return calculoMedia;
-
-    }*/
-
+        return somaNotas / disciplinas.size();
+    }
 
 }

@@ -38,10 +38,13 @@ public class main {
         disciplina4.setNomeDisciplina(discip4);
         disciplina4.setNotaDisciplina(Double.parseDouble(nota4));
 
+        aluno.getDisciplinas().add(disciplina1);
+        aluno.getDisciplinas().add(disciplina2);
+        aluno.getDisciplinas().add(disciplina3);
+        aluno.getDisciplinas().add(disciplina4);
 
-
-
-
+        System.out.println(aluno.getNomeAluno());
+        System.out.println("Media do aluno: " + aluno.getMediaNota());
 
     }
 }
