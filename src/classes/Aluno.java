@@ -18,7 +18,7 @@ public class Aluno {
    private String dataMatriculaAluno;
    private String serieMatriculaAluno;
 
-   private List<Disciplina> disciplinas = new ArrayList();
+   private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 
     public void setDisciplinas(List<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
